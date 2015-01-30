@@ -1,6 +1,10 @@
 # XHTML vs HTML5
 
-いわゆる Self-closing Tag が XHTML と HTML5 でどう違うのかというのを解説するためのサンプルです。
+いわゆる自己閉じタグ (Self-closing Tag) が XHTML と HTML5 でどう違うのかというのを解説するためのサンプルです。
+
+views/*.erb の BODY タグに含まれる //html/body/ 以下はどちらの場合も同じものですが、HTML ヘッダが異なるのと、あと Sinatra で配信する際に content_type を書き換えています。
+
+これによって font-color: green; を指定している自己閉じタグの DIV の有効範囲が異なってきます。
 
 # 動かし方
 
